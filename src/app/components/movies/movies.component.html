@@ -1,0 +1,8 @@
+<div class="main">
+    <div class="peliculas" *ngFor='let item of data'>
+      <a routerLink="/detail/{{item.Title}}" >
+        <img src="{{item.Poster}}" alt="">
+        <h4>{{item.Title}}</h4>
+      </a>
+    </div>
+  </div>

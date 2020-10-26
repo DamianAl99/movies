@@ -1,0 +1,10 @@
+<div class="detail" @fade>
+    <div class="peliculas" *ngIf = 'item'>
+      <img src="{{item.Poster}}" alt="">
+        <h4><span>Name:</span> {{item.Title}}</h4>
+        <h5><span>Production:</span> {{item.Production}}</h5>
+        <h5><span>Duration:</span> {{item.Runtime}}</h5>
+        <h5><span>Year:</span> {{item.Year}}</h5>
+        <button [routerLink]="['/']">Volver</button>
+    </div>
+</div>
